@@ -1,0 +1,369 @@
+<!doctype html>
+
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>FlashProxy免流-闪电云免流-帮助中心</title>
+    <meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0">
+    <link rel="stylesheet" href="css/weui.css">
+    <link rel="stylesheet" href="css/weuix.css">
+    <link rel="stylesheet" href="css/index_common.css">
+    <link rel="icon" href="images/icon.png">
+    <script src="js/zepto.min.js"></script>
+    <script src="js/zepto.weui.js"></script>
+    <script src="js/php.js"></script>
+    <script src="js/axios.min.js"></script>
+    <script src="js/sidebar.js"></script>
+    <script src="js/iscroll-lite.js"></script>
+    <script src="js/index_common.js"></script>
+
+
+</head>
+
+<section class="g-flexview border-t w border-l w border-r w">
+<style>
+    .collapse .weui-flex-help {
+        align-items: center;
+        padding: 10px;
+        transition: all 0.3s ease 0s;
+        display: -webkit-flex;
+        display: -webkit-box;
+        display: flex;
+    }
+</style>
+
+<script>
+    $(function(){
+        $('.collapse .js-category').click(function(){
+            $parent = $(this).parent('li');
+            if($parent.hasClass('js-show')){
+                $parent.removeClass('js-show');
+                $(this).children('i').removeClass('icon-35').addClass('icon-74');
+            }else{
+                $parent.siblings().removeClass('js-show');
+                $parent.addClass('js-show');
+                $(this).children('i').removeClass('icon-74').addClass('icon-35');
+                $parent.siblings().find('i').removeClass('icon-35').addClass('icon-74');
+            }
+        });
+
+    });
+
+</script>
+
+
+
+
+<div class="weui-header bg-blue">
+    <div class="weui-header-left"> <a class="icon icon-109 f-white" href="https://flashproxy.cn">返回</a>  </div>
+    <h1 class="weui-header-title">FlashProxy</h1>
+    <div class="weui-header-right"><a class="icon icon-88 f-white top_help"> </a></div>
+</div>
+
+<script>
+    if(fasInterface != undefined){
+        $('.weui-header').hide();
+    }
+</script>
+
+<p class="weui-panel" style=" margin-top: 0px;">
+</p><p class="page-bd-10">
+<div class="weui-cells__title">遇到问题请先仔细查阅常见问题，如仍未解决再联系管理</div>
+</p>
+
+
+<div class="page-bd">
+    <div class="weui-cells__title">使用说明</div>
+    <ul class="collapse">
+
+        <li><div class="weui-flex-help js-category" >
+            <div class="weui-flex__item" >工具功能说明</div>
+            <i class="icon icon-74"></i>
+        </div>
+            <div class="page-category js-categoryInner">
+                <div class="weui-cells page-category-content">
+                    <p class="content">
+                        本工具主要功能是网络代理、网络加速、安全上网，常用于专属流量卡助手、定向免流，具体请已软件实际开放功能为准。
+                    </p>
+
+                </div></div>
+        </li>
+
+
+        <li><div class="weui-flex-help js-category" >
+            <div class="weui-flex__item" >客户端支持&安装</div>
+            <i class="icon icon-74"></i>
+        </div>
+            <div class="page-category js-categoryInner">
+                <div class="weui-cells page-category-content">
+                    <p class="content f-red" >
+                        目前支持的操作系统：
+                    </p>
+                    <p class="content">
+                        Android系统7.0版本以上，部分机型安装软件时可能会出现报毒属于系统误报
+                    </p>
+                    <div  style="margin-top: 10px;" ></div>
+
+                    <a class="weui-cell weui-cell_access" href="https://lanzous.com/b00tj3l0d" target="_blank">
+                        <div class="weui-cell__bd">
+                            <p>客户端下载</p>
+                        </div>
+                        <div class="weui-cell__ft"></div>
+                    </a>
+                    
+
+                </div></div>
+        </li>
+
+
+        <div class="weui-cells__title">常见问题解答</div>
+        <li><div class="weui-flex-help js-category" >
+            <div class="weui-flex__item" >网速卡慢 等问题</div>
+            <i class="icon icon-74"></i>
+        </div>
+            <div class="page-category js-categoryInner" style="padding: 0px;">
+
+                <div class="weui-cells page-category-content">
+                    <a class="weui-cell weui-cell_access" href="JavaScript:;">
+                        <div class="weui-cell__bd">
+                            <p onclick='$.alert("请尝试切换免流IP","");'>1.网速一直很慢</p>
+                        </div>
+                        <div class="weui-cell__ft"></div>
+                    </a>
+                    <a class="weui-cell weui-cell_access" href="JavaScript:;">
+                        <div class="weui-cell__bd">
+                            <p onclick='$.alert("请尝试重启手机，或开关飞行模式","");'>2.网速偶尔慢</p>
+                        </div>
+                        <div class="weui-cell__ft"></div>
+                    </a>
+                    <a class="weui-cell weui-cell_access" href="JavaScript:;">
+                        <div class="weui-cell__bd">
+                            <p onclick='$.alert("正常情况下连接本工具后延迟会少量高于正常4G/5G网络，但若延迟过高请尝试距离近的IP","");'>3.网络延迟很高</p>
+                        </div>
+                        <div class="weui-cell__ft"></div>
+                    </a>
+
+                </div></div>
+        </li>
+
+        <li><div class="weui-flex-help js-category" >
+            <div class="weui-flex__item" >IP网速问题</div>
+            <i class="icon icon-74"></i>
+        </div>
+            <div class="page-category js-categoryInner">
+                <div class="weui-cells page-category-content">
+                    <p class="content">
+                        1.距离近的IP不一定快，距离远的IP也不一定慢，受网络信号和节点距离影响请以测试结果为准。
+                    </p>
+
+                </div></div>
+        </li>
+
+
+        <li><div class="weui-flex-help js-category" >
+            <div class="weui-flex__item" >连接时错误1？</div>
+            <i class="icon icon-74"></i>
+        </div>
+            <div class="page-category js-categoryInner">
+                <div class="weui-cells page-category-content">
+                    <p class="content">
+                        1.账号流量套餐已到期。
+                    </p>
+                    <p class="content">
+                        2.账号密码错误或已被修改，重新登录账号密码。
+                    </p>
+                    <p class="content">
+                        3.高级设置内混淆请不要用关于flashproxy域名的。(清空即可)
+                    </p>
+                </div></div>
+        </li>
+
+        <li><div class="weui-flex-help js-category" >
+            <div class="weui-flex__item" >连接时没网？</div>
+            <i class="icon icon-74"></i>
+        </div>
+            <div class="page-category js-categoryInner">
+                <div class="weui-cells page-category-content">
+                    <p class="content">
+                        1.如出现以上问题请检查IP是否正确或者截图运行状态给管理员。
+                    </p>
+                </div></div>
+        </li>
+        <li><div class="weui-flex-help js-category" >
+            <div class="weui-flex__item" >总是异常断开或退出连接？</div>
+            <i class="icon icon-74"></i>
+        </div>
+            <div class="page-category js-categoryInner">
+                <div class="weui-cells page-category-content">
+                    <p class="content">
+                        1.网络信号不稳定，自身信号源发生变化时 系统就会断开重连，比如信号差时手机从4G网切换到3G网就会导致断开或断网。
+                    </p>
+                    <p class="content">
+                        2.账号存在多人登录使用，手机同时在线也会引起异常断开。
+                    </p>
+                    <p class="content">
+                        3.安卓用户请设置应用白名单，保护软件后台运行。
+                    </p>
+                    <p class="content">
+                        4.工具异常或故障，请重新打开或询问管理情况。
+                    </p>
+                </div></div>
+        </li>
+
+
+
+    </ul>
+
+
+    <div class="weui-cells__title">扩展功能</div>
+    <ul class="collapse">
+        <li><div class="weui-flex-help js-category" >
+            <div class="weui-flex__item" >共享热点</div>
+            <i class="icon icon-74"></i>
+        </div>
+            <div class="page-category js-categoryInner">
+
+                <div class="weui-cells page-category-content">
+                    <p class="content">
+                        使用本工具后如需将本工具的网络共享到其他设备，需借助共享热点工具，部分热点工具需要root手机权限
+                    </p>
+                    <p class="content">
+                        操作流程：A手机打开热点工具并开启热点 <span class="icon icon-41"></span> B手机连接热点 <span class="icon icon-41"></span> 连接成功后A手机连接本工具 <span class="icon icon-41"></span> 本工具网络共享成功
+                    </p>
+                    <a class="weui-cell weui-cell_access"  href="https://wwa.lanzous.com/i41NGeib5ib" target="_blank">
+                        <div class="weui-cell__bd">
+                            <p>安卓热点工具下载</p>
+                        </div>
+                        <div class="weui-cell__ft"></div>
+                    </a>
+                </div></div>
+        </li>
+
+
+
+        <li><div class="weui-flex-help js-category" >
+            <div class="weui-flex__item" >游戏加速</div>
+            <i class="icon icon-74"></i>
+        </div>
+            <div class="page-category js-categoryInner">
+
+                <div class="weui-cells page-category-content">
+                    <p class="content f-red">
+                        本工具连接后会存在少量网络延迟，如果常用于网络游戏、实时直播等对延迟要求较高的业务时会出现不稳定情况属于正常。
+                    </p>
+
+                    <p class="content">
+                        对网络质量要求较高的用户建议自行搭建UDP，工具本身付费用户自带UDP服务，正常情况下是流畅的，但不代表其流畅效果能够满足所有人，请以实际效果为准。
+                    </p>
+
+                </div></div>
+        </li>
+    </ul>
+
+
+
+
+    <div class="weui-cells__title">工具服务</div>
+    <ul class="collapse">
+        <li>
+            <div class="weui-flex-help js-category" >
+            <div class="weui-flex__item" >联系管理</div>
+            <i class="icon icon-74"></i>
+        </div>
+            <div class="page-category js-categoryInner">
+
+                <div class="weui-cells page-category-content">
+                    <p class="content f-red">
+                        联系管理前请先确认以上常见问题中经过尝试后无法解决，提供相关截图或说明耐心等待管理回复。
+                    </p>
+                    <a class="weui-cell weui-cell_access" href="http://wpa.qq.com/msgrd?v=3&uin=446150793&site=qq&menu=yes" style="display: ">
+                        <div class="weui-cell__bd">
+                            <p>QQ管理员: 446150793</p>
+                        </div>
+                        <div ><span class="weui-btn weui-btn_mini weui-btn_default">联系</span></div>
+                    </a>
+                    <a class="weui-cell weui-cell_access copyBtn" id="copy_url" href="JavaScript:;" style="display: ">
+                        <div class="weui-cell__bd">
+                            <p>微信管理员: PainterXIII</p>
+                        </div>
+                        <div><span class="weui-btn weui-btn_mini weui-btn_default" onClick="copy(this)" data="DKINGML">复制</span></div>
+                    </a>
+                </div></div>
+        </li>
+
+
+
+
+<!--        <li id="setagent">
+            <div class="weui-flex-help js-category">
+                <div class="weui-flex__item">成为代理</div>
+                <i class="icon icon-74"></i>
+            </div>
+            <div class="page-category js-categoryInner">
+
+                <div class="weui-cells page-category-content">
+                    <p class="content f-red">
+                        加入我们即可享受代理价拿货，制定代理版本，开通代理后台，搭建独立发卡平台。
+                    </p>
+                    <a class="weui-cell weui-cell_access" href="/index/user/agent/act/more/username/13995881253/password/123456/agent/1323/version/1.0/app_key/70e2a2f4e3cd2b757a8fb168cb288fb4/app_mode/all.html">
+                        <div class="weui-cell__bd">
+                            <p>代理介绍</p>
+                        </div>
+                        <div class="weui-cell__ft"></div>
+                    </a>
+
+
+                    <a class="weui-cell weui-cell_access" href="tel:446150793" style="display: ">
+                        <div class="weui-cell__bd">
+                            <p>合作热线:446150793</p>
+                        </div>
+                    <div><span class="weui-btn weui-btn_mini weui-btn_default">联系</span></div>
+                    </a>
+                </div></div>
+        </li>
+
+-->
+    </ul>
+</div>
+
+
+
+
+<input id="copy_content" type="text" value="x1653705059" style="position: absolute;top: 0;left: 0;opacity: 0;z-index: -10;">
+<script>
+
+    var phone = '13060625894';
+    if(phone == ''){
+        $('#setagent').hide();
+    }
+
+
+
+    /*js复制*/
+    function copy(ElementObj) {
+        var clickContent = ElementObj.getAttribute('data');  //获取要复制的值
+        var inputElement =  document.getElementById("copy_content");  //获取要赋值的input的元素
+        inputElement.value = clickContent;  //给input框赋值
+        inputElement.select();//选中input框的内容
+        document.execCommand("Copy");// 执行浏览器复制命令
+        if(IsPC() == true || isWeiXin() == true){
+            $.toast("复制成功");
+            return;
+        }
+
+        $.confirm("复制成功，是否打开微信添加好友?", "是否打开微信?", function() {
+            window.location.href = 'weixin://';
+        }, function() {
+            //取消操作
+        });
+
+    }
+
+    $('.top_help').click(function () {
+        $.alert("遇到问题请先仔细查阅常见问题，如仍未解决再联系管理","提示",function(){
+        });
+    });
+
+</script>
+</section></html>

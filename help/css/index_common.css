@@ -1,0 +1,224 @@
+body {
+	background: #f5f5f5;
+	color: #666;
+}
+/*.bg-blue {*/
+/*    background-color: #ea3a3a;*/
+/*    background-image: linear-gradient(to right, #10aeff , #2fe9fb);*/
+/*}*/
+.overHidden{overflow: hidden;height: 100%;}
+* {
+	touch-action: pan-y;
+}
+.i {
+	stroke: currentColor;
+	stroke-width: 2px;
+	stroke-linecap: round;
+	stroke-linejoin: round;
+	fill: none;
+	width: 1.5em;
+	height: 1.5em;
+	margin: 0.4em;
+}
+
+svg, svg symbol {
+	overflow: visible;
+}
+.collapse .weui-flex {
+	align-items: center;
+	padding: 20px;
+	transition: all 0.3s ease 0s;
+	display: -webkit-flex;
+	display: -webkit-box;
+	display: flex;
+}
+
+.weui-cells__line {
+	margin-top: .3em;
+	margin-bottom: .3em;
+	padding-left: 0px;
+	padding-right: 0px;
+	color: #999999;
+	font-size: 14px;
+	/* float: left; */
+	margin-right: 1em;
+	text-align: justify;
+	text-justify: newspaper;
+	word-break: break-all;
+	
+}
+.weui-cells {
+	margin-top: 0.3em;
+	background-color: #FFFFFF;
+	line-height: 1.47058824;
+	font-size: 15px;
+	overflow: hidden;
+	position: relative;
+}
+
+.weui-search-bar__box_search {
+	/*margin-top: 0.3em;*/
+	position: relative;
+	/*padding-left: 30px;*/
+	padding-right: 30px;
+	height: 100%;
+	width: 100%;
+	box-sizing: border-box;
+	z-index: 1;
+}
+
+.placeholder {
+	margin: 5px;
+	/*padding: 0 10px;*/
+	background-color: #fff;
+	height: 2.3em;
+	line-height: 2.3em;
+	text-align: center;
+	/*color: #fff;*/
+}
+
+.weui-pay-inputs {
+	padding-left: 28px;
+	width: 100%;
+	box-sizing: border-box;
+	border: none;
+	outline: 0;
+	height: 40px;
+	line-height: 40px;
+	font-size: 20px;
+}
+
+.right_icon {
+	content: " ";
+	display: inline-block;
+	-webkit-transform: rotate(45deg);
+	transform: rotate(45deg);
+	height: 6px;
+	width: 6px;
+	border-width: 2px 2px 0 0;
+	border-color: #c8c8cd;
+	border-style: solid;
+	position: relative;
+	top: -2px;
+	top: -1px;
+	margin-left: .3em;
+}
+
+.weui-pay {
+	position: relative;
+	z-index: 1;
+	padding: 0px;
+}
+
+.weui-tab__panel_home {
+	margin-top: -1em;
+	box-sizing: border-box;
+	height: 100%;
+	padding-bottom: 50px;
+	overflow: auto;
+	-webkit-overflow-scrolling: touch;
+}
+
+.weui-cell_line {
+	background: #FFFFFF;
+	/*position: relative;*/
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	align-items: center;
+	padding: 5px 10px;
+	margin: 5px;
+}
+.weui-cell_line:before {
+	/*content: " ";*/
+	position: absolute;
+	left: 0;
+	top: 0;
+	right: 0;
+	height: 1px;
+	border-top: 1px solid #e5e5e5;
+	color: #e5e5e5;
+	-webkit-transform-origin: 0 0;
+	transform-origin: 0 0;
+	-webkit-transform: scaleY(0.5);
+	transform: scaleY(0.5);
+	left: 15px;
+	z-index: 2;
+}
+
+.weui-select-modal .weui-cells {
+	margin: 0;
+	text-align: left;
+	overflow-y: auto;
+	overflow-x: hidden;
+	max-height: 26rem;
+}
+
+.weui-tabbar__item.weui-bar__item_on .weui-tabbar__icon, .weui-tabbar__item.weui-bar__item_on .weui-tabbar__icon > i, .weui-tabbar__item.weui-bar__item_on .weui-tabbar__label {
+	color: #07c160 !important;
+}
+.timeline-item-color {
+	background-color: #07c160 !important;
+}
+.timeline-item-tail {
+	position: absolute;
+	content: '';
+	height: 100%;
+	width: 2px;
+	left: 5px;
+	top: 5px;
+	background-color: #07c160 !important;
+}
+.timeline .recent {
+	color: #07c160 !important;
+}
+.weui-media-box {
+	padding: 10px;
+	position: relative;
+}
+
+.g-flexview {
+	height: 100%;
+	margin: 0 auto;
+	max-width: 480px;
+	min-width: 300px;
+	/*border: 1px solid #e0e0e0 !important;*/
+}
+
+.footer{
+	bottom: 0;
+	width: auto;
+	max-width: 480px;
+	min-width: 300px;
+	padding: 5px 5px;
+	margin-top: 20px;
+}
+#list_note_icon {
+	position: fixed;
+	bottom: 21%;
+	right: 8%;
+	z-index: 888;
+	background: #ffffff;
+	width: 45px;
+	height: 45px;
+	border-radius: 45px;
+	box-shadow: 2px 2px 2px #10aeff;
+	/* opacity: 0.5; */
+}
+.operation_content{
+	cursor:hand;
+	font-family:Webdings;
+	width:20px;
+	height:20px;
+	vertical-align:baseline;
+	padding:1px;
+	line-height:50px;
+	display: block;
+	margin-block-start: 1.33em;
+	margin-block-end: 1.33em;
+	margin-inline-start: 0px;
+	margin-inline-end: 0px;
+	font-weight: bold;
+}
